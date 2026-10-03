@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="es" style="height: auto">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>IFOP | Muestreo | Longitud</title>
+        <link rel="shortcut icon" href="https://www.ifop.cl/wp-content/themes/tema_mmasesorias/img/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css"
+            integrity="sha512-IuO+tczf4J43RzbCMEFggCWW5JuX78IrCJRFFBoQEXNvGI6gkUw4OjuwMidiS4Lm9Q2lILzpJwZuMWuSEeT9UQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="../../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(31, 98, 168)">
+                <a href="../../index.html" class="brand-link">
+                    <img src="../../assets/img/logo.png" alt="IFOP" class="brand-image img-circle elevation-3" />
+                    <span class="brand-text font-weight-light">IFOP</span>
+                </a>
+
+                <div class="sidebar">
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="../../assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="Usuario" />
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">Usuario IFOP</a>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="input-group" data-widget="sidebar-search">
+                            <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Buscar" />
+                            <div class="input-group-append">
+                                <button class="btn btn-sidebar">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-search-results">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item"><div class="search-title">Sin resultados</div><div class="search-path"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-wrapper" style="min-height: 234px">
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">Muestreo</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                    <li class="breadcrumb-item active">Muestreo</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="card card-primary card-outline" id="cardMuestreoLongitud1" style="display: none">
+                            <div class="card-header">
+                                <h5 class="card-title">Longitud</h5>
+                        
+                                <div class="card-tools">
+                                    <!-- <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse"><i class="fas fa-minus"></i></button> -->
+                                    <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                                    <!-- <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button> -->
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-hover my-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Especie</th>
+                                                <th>Longitud</th>
+                                                <th>Sexo</th>
+                                                <th>E_1</th>
+                                                <th>E_2</th>
+                                                <th>E_3</th>
+                                                <th>E_4</th>
+                                                <th>E_5</th>
+                                                <th>N_INDIVIDUOS</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.4.1/fxparser.min.js"></script>
+
+        <link href="https://cdn.datatables.net/v/bs4/dt-2.1.3/fc-5.0.1/sc-2.4.3/datatables.min.css" rel="stylesheet" />
+        <script src="https://cdn.datatables.net/v/bs4/dt-2.1.3/fc-5.0.1/sc-2.4.3/datatables.min.js"></script>
+
+        <script>
+            const parser = new XMLParser({
+                ignoreAttributes: false,
+                attributeNamePrefix: "@_",
+            });
+
+            fetch("../../adjuntos/v3_940266_18_05_2018_20_32.xml")
+                .then((response) => response.text())
+                .then((xmlText) => {
+                    let parsedData = parser.parse(xmlText);
+
+                    const fishNames = {
+                        33: "SARDINA COMUN",
+                        114: "ANCHOVETA",
+                    };
+
+                    const longitudes = parsedData.VIAJE.EXTRACCION.LONGITUD.flatMap((l) => l.ESPECIE || []);
+                    const tableData = longitudes.flatMap((especie) =>
+                        especie.ESPECIMEN.map((especimen) => [
+                            fishNames[especie["@_COD_ESPECIE"]] || especie["@_COD_ESPECIE"],
+                            especimen.LONGITUD["@_VALOR"],
+                            especimen.SEXO["@_VALOR"],
+                            especimen.E_1["@_VALOR"],
+                            especimen.E_2["@_VALOR"],
+                            especimen.E_3["@_VALOR"],
+                            especimen.E_4["@_VALOR"],
+                            especimen.E_5["@_VALOR"],
+                            especimen.N_INDIVIDUOS["@_VALOR"],
+                        ])
+                    );
+
+                    $("#cardMuestreoLongitud1 table").DataTable({
+                        data: tableData,
+                        columns: [
+                            { title: "Especie" },
+                            { title: "Longitud" },
+                            { title: "Sexo" },
+                            { title: "E_1" },
+                            { title: "E_2" },
+                            { title: "E_3" },
+                            { title: "E_4" },
+                            { title: "E_5" },
+                            { title: "N_INDIVIDUOS" },
+                        ],
+                        language: {
+                            url: "https://cdn.datatables.net/plug-ins/2.1.0/i18n/es-CL.json",
+                        },
+                    });
+
+                    $("#cardMuestreoLongitud1").show();
+                })
+                .catch((error) => console.error("Error:", error));
+        </script>
+    </body>
+</html>

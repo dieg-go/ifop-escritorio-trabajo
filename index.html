@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="es" style="height: auto">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>IFOP | Escritorio de Trabajo</title>
+        <link rel="shortcut icon" href="https://www.ifop.cl/wp-content/themes/tema_mmasesorias/img/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css"
+            integrity="sha512-IuO+tczf4J43RzbCMEFggCWW5JuX78IrCJRFFBoQEXNvGI6gkUw4OjuwMidiS4Lm9Q2lILzpJwZuMWuSEeT9UQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="https://cdn.datatables.net/v/bs4/dt-2.1.3/fh-4.0.1/r-3.0.2/datatables.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/monokai.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    </head>
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-inline-block">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(31, 98, 168)">
+                <a href="index.html" class="brand-link">
+                    <img src="assets/img/logo.png" alt="IFOP" class="brand-image img-circle elevation-3" />
+                    <span class="brand-text font-weight-light">IFOP</span>
+                </a>
+
+                <div class="sidebar">
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="Usuario" />
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">Usuario IFOP</a>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="input-group" data-widget="sidebar-search">
+                            <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Buscar" />
+                            <div class="input-group-append">
+                                <button class="btn btn-sidebar">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-search-results">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item"><div class="search-title">Sin resultados</div><div class="search-path"></div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="collapse" data-target="cardBodyCumplimiento" id="btnCumplimiento">
+                                    <i class="nav-icon fas fa-clipboard-check"></i>
+                                    <p>Cumplimiento</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="collapse" data-target="cardBodyEstadisticas" id="btnEstadisticas">
+                                    <i class="nav-icon fas fa-chart-line"></i>
+                                    <p>Estadísticas</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <div class="content-wrapper" style="min-height: 234px">
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0">Escritorio de Trabajo</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                    <li class="breadcrumb-item active">Escritorio de Trabajo</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <div class="card card-outline card-primary" id="cardEstadisticas" style="display: none">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Estadísticas Generales</h5>
+                                        <div class="card-tools">
+                                            <button class="btn btn-tool" type="button" data-toggle="collapse" data-target="#collapseFiltrosEstadisticas" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-filter"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body" id="cardBodyEstadisticas"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="card card-outline card-primary" id="cardCumplimiento" style="display: none">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Cumplimiento</h5>
+                                        <div class="card-tools">
+                                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body" id="cardBodyCumplimiento"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-outline card-primary">
+                            <div class="card-header">
+                                <h5 class="card-title">Viajes</h5>
+                                <div class="card-tools">
+                                    <!-- <button class="btn btn-tool" type="button" data-toggle="collapse" data-target="#collapseEstados" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars-progress"></i>
+                                    </button> -->
+                                    <button class="btn btn-tool" type="button" data-toggle="collapse" data-target="#collapseFiltrosGrilla" aria-expanded="false" aria-controls="collapseFiltrosGrilla" title="Filtros">
+                                        <i class="fas fa-filter"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card-body" id="cardBodyGrilla"></div>
+                        </div>
+
+                        <ul id="pagination" class="pagination pagination-sm m-0 float-right"></ul>
+                    </div>
+                </div>
+                <div class="modal fade show" id="infoModal" style="display: none" aria-modal="true" role="dialog">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Detalle</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer justify-content-between" style="display: none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/js/adminlte.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.datatables.net/v/bs4/dt-2.1.3/fh-4.0.1/r-3.0.2/datatables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/xml/xml.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.4.1/fxparser.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <script src="scripts/modalErrorCruce.js"></script>
+        <script src="scripts/modalAdjuntos.js"></script>
+        <script src="scripts/modalSIEM.js"></script>
+        <script src="scripts/modalAdminViaje.js"></script>
+        <script src="scripts/modalDatosHist.js"></script>
+        <script src="scripts/modalBitacora.js"></script>
+        <script src="scripts/cardEstadisticas.js"></script>
+        <script src="scripts/cardCumplimiento.js"></script>
+        <script src="scripts/modalCargarXML.js"></script>
+
+        <script src="scripts/tablaViajes.js"></script>
+    </body>
+</html>
