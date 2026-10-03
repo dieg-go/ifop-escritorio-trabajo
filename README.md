@@ -110,7 +110,7 @@ capturas/                     Capturas para este README
 
 La interfaz se construyó sobre **AdminLTE 3** (Bootstrap 4 + jQuery), con **DataTables** para las grillas, **Chart.js** para los gráficos, **Leaflet** para la geografía y **pdf.js** / **CodeMirror** para la previsualización de adjuntos.
 
-La elección responde al objetivo del prototipo: validar la interfaz y los flujos con los usuarios en el menor tiempo posible, reutilizando componentes ya conocidos por el equipo. Para una implementación en producción la propuesta apunta a un stack con componentes reutilizables y estado tipado, como el que se usó en el sistema de apoyo a las decisiones del proyecto de título ([sw-mejor-ninez](https://github.com/dieg-go/sw-mejor-ninez)).
+La elección responde al objetivo del prototipo: validar la interfaz y los flujos con los usuarios en el menor tiempo posible, reutilizando componentes ya conocidos por el equipo. Para una implementación en producción la propuesta apunta a un stack con componentes reutilizables y estado tipado.
 
 ## Datos
 
@@ -118,8 +118,6 @@ La elección responde al objetivo del prototipo: validar la interfaz y los flujo
 
 ## Trabajo pendiente
 
-- Los visualizadores de perfil referencian `scripts/modal.js` y `scripts/modalAV.js`, que no están en el repositorio: el navegador devuelve 404 y las opciones de **Acciones** que dependen de esos archivos no abren su modal.
-- Los desplegables de **Acciones** repiten el mismo `id` en cada fila de la tabla. Como `getElementById` resuelve solo la primera coincidencia, las acciones quedan bien conectadas únicamente en la primera fila. Hay que pasar a delegación de eventos o a `data-*`.
 - El prototipo no tiene backend: los datos de la grilla de viajes están en el propio JavaScript y el XML se lee de un archivo local.
 
 ## Autor
